@@ -45,5 +45,24 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>썸네일 이미지를 업로드하기 위해 사진 라이브러리 접근이 필요합니다.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>썸네일 이미지를 촬영하기 위해 카메라 접근이 필요합니다.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>이미지를 저장하기 위해 사진 라이브러리 접근이 필요합니다.</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.950545181883-g6r1up507tcdn7evtguvdjoc90e35o22</string>
+			</array>
+		</dict>
+	</array>
+	<key>GIDClientID</key>
+	<string>950545181883-g6r1up507tcdn7evtguvdjoc90e35o22.apps.googleusercontent.com</string>
 </dict>
 </plist>

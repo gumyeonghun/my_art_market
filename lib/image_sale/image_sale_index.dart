@@ -2,8 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:my_art_market/image_sale/image_sale_detail.dart';
 
 class ImageSaleIndex extends StatefulWidget {
-  const ImageSaleIndex({required this.title,required this.imageAddress, required this.content, required this.isSale,super.key,});
+  const ImageSaleIndex({
+    required this.docId,
+    required this.title,
+    required this.imageAddress,
+    required this.content,
+    required this.isSale,
+    super.key,
+  });
 
+  final String docId;
   final String title;
   final String imageAddress;
   final String content;
@@ -17,10 +25,12 @@ class _ImageSaleIndexState extends State<ImageSaleIndex> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){
+      onTap: () {
         print(widget.imageAddress);
-        Navigator.push(context, MaterialPageRoute(builder: (context){
+        Navigator.push(context, MaterialPageRoute(builder: (context) {
           return ImageSaleDetail(
+            docId: widget.docId,
+            title: widget.title,
             imageAddress: widget.imageAddress,
             content: widget.content,
           );

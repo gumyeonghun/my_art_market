@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_art_market/home_page_appbar.dart';
 import 'package:my_art_market/home_page_body.dart';
+import 'package:my_art_market/pages/search_page.dart';
+import 'package:my_art_market/pages/profile_page.dart';
 
 class HomePageView extends StatefulWidget {
   const HomePageView({super.key});
@@ -28,8 +30,8 @@ class _HomePageViewState extends State<HomePageView> {
         index: index,
         children: [
           HomePageBody(),
-          Container(color: Colors.pink,),
-          Container(color: Colors.green,),
+          const SearchPage(),
+          const ProfilePage(),
         ],
       ),
       bottomNavigationBar: Container(

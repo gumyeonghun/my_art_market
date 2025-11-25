@@ -29,8 +29,7 @@ class _HomePageBodyState extends State<HomePageBody> {
               GestureDetector(
                 onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context){
-                    return ImageSaleWrite(
-                    );
+                    return ImageSaleHome();
                   }
                   )
                   );

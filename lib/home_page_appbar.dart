@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_art_market/pages/cart_page.dart';
 
 class HomePageAppbar extends StatelessWidget {
   const HomePageAppbar({super.key});
@@ -9,7 +10,15 @@ class HomePageAppbar extends StatelessWidget {
       children: [
         Icon(Icons.location_on_outlined,color: Colors.white,size: 30,),
         SizedBox(width: 10,),
-        Icon(Icons.shopping_cart_outlined,color: Colors.white,size: 30,),
+        IconButton(
+          icon: const Icon(Icons.shopping_cart_outlined, color: Colors.white, size: 30),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const CartPage()),
+            );
+          },
+        ),
         SizedBox(width: 20),
       ],
     );

@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => CartProvider()),
       ],
       child: MaterialApp(
-        title: 'MY ART MARKET',
+        title: 'MY ARTs MARKET',
         theme: ThemeData(
           primarySwatch: Colors.blue,
           useMaterial3: true,

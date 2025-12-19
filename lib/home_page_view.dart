@@ -20,7 +20,7 @@ class _HomePageViewState extends State<HomePageView> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.red,
-        title: Text('MY ART MARKET', style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold, fontSize:25)),
+        title: Text('MY ARTs MARKET', style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold, fontSize:25)),
         centerTitle: true,
         actions: [
           HomePageAppbar(),

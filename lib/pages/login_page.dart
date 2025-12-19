@@ -161,7 +161,7 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
                       
                       // Title
                       const Text(
-                        'MY ART MARKET',
+                        'MY ARTs MARKET',
                         style: TextStyle(
                           fontSize: 32,
                           fontWeight: FontWeight.bold,
